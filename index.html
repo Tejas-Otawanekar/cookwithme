@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'll Cook for You</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <header>
+
+    <h1>cook with me</h1>
+    <p style="font-size: medium">Your source for delicious Indian recipes</p>
+    
+  </header>
+  <h2>Recipes Across India</h2>
+  
+  <main>
+    <section id="recipe-list">
+      <!-- North Indian -->
+      <div class="recipe-card" onclick="showRecipe('butter-chicken')">
+        <img src="BC.jpg" alt="">
+        <h3>Butter Chicken (Punjab)</h3>
+        <p>A rich and creamy curry made with marinated chicken.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      <div class="recipe-card" onclick="showRecipe('chole-bhature')">
+        <img src="CB.png" alt="">
+        <h3>Chole Bhature (Delhi)</h3>
+        <p>A popular dish of spicy chickpeas served with fluffy fried bread.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      
+      <!-- South Indian -->
+      <div class="recipe-card" onclick="showRecipe('masala-dosa')">
+        <img src="dosa.jpg" alt="">
+        <h3>Masala Dosa (Karnataka)</h3>
+        <p>A crispy dosa filled with spiced potato filling.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      <div class="recipe-card" onclick="showRecipe('hyderabadi-biryani')">
+        <img src="HB.png" alt="">
+        <h3>Hyderabadi Biryani (Telangana)</h3>
+        <p>Aromatic basmati rice layered with marinated meat and cooked with saffron.</p>
+        
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      
+      <!-- West Indian -->
+      <div class="recipe-card" onclick="showRecipe('vada-pav')">
+        <img src="VP.png" alt="">
+        <h3>Vada Pav (Maharashtra)</h3>
+        <p>A spicy potato fritter sandwiched between a pav with chutneys.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      <div class="recipe-card" onclick="showRecipe('dhokla')">
+        <img src="DH.png" alt="">
+        <h3>Dhokla (Gujarat)</h3>
+        <p>A steamed savory cake made from fermented rice and chickpea batter.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      
+      <!-- East Indian -->
+      <div class="recipe-card" onclick="showRecipe('rosogolla')">
+        <img src="RG.png" alt="">
+        <h3>Rosogolla (West Bengal)</h3>
+        <p>Spongy, sweet dumplings made from chhena, soaked in sugar syrup.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      <div class="recipe-card" onclick="showRecipe('momos')">
+        <img src="momo.png" alt="">
+        <h3>Momos (Sikkim)</h3>
+        <p>Steamed dumplings filled with vegetables or meat, served with spicy chutney.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      </div>
+      
+      <!-- Central Indian -->
+      <div class="recipe-card" onclick="showRecipe('dal-bati-churma')">
+        <img src="dal.png" alt="">
+        <h3>Dal Baati Churma (Rajasthan)</h3>
+        <p>Baked wheat balls served with spicy lentils and sweet churma.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      <div class="recipe-card" onclick="showRecipe('litti-chokha')">
+        <img src="litti.png" alt="">
+        <h3>Litti Chokha (Bihar)</h3>
+        <p>Wheat flour dough balls stuffed with spiced gram flour and served with mashed vegetables.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      
+      <!-- North-East Indian -->
+      <div class="recipe-card" onclick="showRecipe('pakhala-bhaat')">
+        <img src="PK.png" alt="">
+        <h3>Pakhala Bhaat (Odisha)</h3>
+        <p>Fermented rice dish served with fried or mashed vegetables.</p>
+        <a class="anchor" href="https://youtu.be/bX7AyuNMrVY?si=LAvrSLtmqGukq4ok">watch video</a>
+      </div>
+      
+    </section>
+  </main>
+
+  <div id="recipe-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeRecipe()">&times;</span>
+      <div id="recipe-details"></div>
+    </div>
+  </div>
+
+  <script src="first.js"></script>
+</body>
+</html>
